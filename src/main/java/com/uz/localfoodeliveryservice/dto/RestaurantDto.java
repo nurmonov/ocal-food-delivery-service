@@ -1,17 +1,19 @@
-package com.uz.localfoodeliveryservice.dto.response;
+package com.uz.localfoodeliveryservice.dto;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class RestaurantResponse {
+@NoArgsConstructor
+public class RestaurantDto {
     private Integer id;
-    private Integer ownerId;
+    private Integer ownerId; // User id
     private String name;
     private String address;
     private String phone;
     private String logoUrl;
 }
+
