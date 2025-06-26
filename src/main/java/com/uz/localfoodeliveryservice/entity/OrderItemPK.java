@@ -12,6 +12,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 public class OrderItemPK implements Serializable {
-    private Long orderId;
-    private Long productId;
+    private Integer orderId;
+    private Integer productId;
 }
