@@ -1,14 +1,16 @@
-package com.uz.localfoodeliveryservice.dto.response;
+package com.uz.localfoodeliveryservice.dto;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class OrderItemResponse {
+@NoArgsConstructor
+public class OrderItemDto {
     private Integer productId;
     private Integer quantity;
     private Integer price;
 }
+
