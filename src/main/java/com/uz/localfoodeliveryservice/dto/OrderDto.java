@@ -1,12 +1,12 @@
 package com.uz.localfoodeliveryservice.dto;
 
-
+import com.uz.localfoodeliveryservice.entity.enums.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,9 +16,8 @@ public class OrderDto {
     private Integer userId;
     private Integer restaurantId;
     private Integer totalPrice;
-    private String status; // e.g. NEW, PAID, DELIVERED, CANCELLED
-    private LocalDateTime createdAt;
+    private OrderStatus status;
+    private Instant createdAt;
 
-    private List<OrderItemDto> items; // optional: OrderItem list
+
 }
-

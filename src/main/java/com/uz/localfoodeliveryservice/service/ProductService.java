@@ -61,7 +61,6 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    // --- Manual mapping methods ---
 
     private ProductDto toDto(Product product) {
         return new ProductDto(
@@ -81,7 +80,6 @@ public class ProductService {
         product.setDescription(dto.getDescription());
         product.setPrice(dto.getPrice());
         product.setImageUrl(dto.getImageUrl());
-        // restaurant set qilishni service'da alohida qilamiz
         return product;
     }
 }
